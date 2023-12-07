@@ -27,6 +27,13 @@
 @media (min-width: 768px) {
   .footer .boxAroundAll {
     display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1300px) {
+  .footer .boxAroundAll {
+    justify-content: space-between;
+    padding: 0rem 7.5rem;
   }
 }
 .footer .boxAroundAll .logo {
