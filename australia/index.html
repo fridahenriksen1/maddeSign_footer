@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+   
+   
+    <!-- ICONS - Google material icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>MaddeSign</title>
+  </head>
+  <body>
+    <!-- 
+    "maxw" = med denna klass i style.scss får webbsidan samma max-width
+    "m3b" = margin bottom 3rem/3rem/2rem osv, använd färdiga klasser i style.scss på index för att skapa luft
+    -->
+    <div class="main-01">
+      <!-- _HERO IMAGE_UTAN MAX-WIDTH_-->
+      <div class="hero-container m3b">
+        <!-- HERO WRAP CENTRERAR HEADER och INTRO HEADING -->
+        <div class="hero-wrap">
+          <!-- _HEADER_FLUID -->
+          <header class="header fluid">
+            <!-- _MENU_MOBILE_ -->
+            <div class="menu-mobile">
+              <nav class="menu-overlay">
+                <!-- open menu -->
+                <button class="open-btn">
+                  <img
+                    src="/australia/icons/Menu.svg"
+                    alt="open the menu"
+                    class="open-icon"
+                  />
+                </button>
+                <ul class="menu-list">
+                  <li class="menu-item close-item">
+                    <!-- close menu-->
+                    <button class="close-btn">
+                      <img
+                        src="/australia/icons/Close_round.svg"
+                        alt="close the menu"
+                        class="close-icon"
+                      />
+                    </button>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <h3>Destinations</h3>
+                      <img
+                        src="/australia/icons/arrow_right.svg"
+                        alt="link arrow"
+                        class="arrow-right"
+                      />
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <h3>Activities</h3>
+                      <img
+                        src="/australia/icons/arrow_right.svg"
+                        alt="link arrow"
+                        class="arrow-right"
+                      />
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <h3>About australia</h3>
+                      <img
+                        src="/australia/icons/arrow_right.svg"
+                        alt="link arrow"
+                        class="arrow-right"
+                      />
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="menu-link">
+                      <h3>Language</h3>
+                      <img
+                        src="/australia/icons/arrow-down.svg"
+                        alt="dropdown arrow"
+                        class="drop-down"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- _LOGO_SVG_ -->
+            <a href="#" class="logo-container">
+              <img
+                src="/australia/img/australia.svg"
+                class="logo-svg"
+                alt="our website logo in svg format saying australia"
+              />
+            </a>
+            <!-- _MENU_DESKTOP -->
+            <div class="menu-desktop">
+              <nav class="menu-01">
+                <ul class="menu-list01">
+                  <li class="menu-item01">
+                    <a href="#" class="menu-link01">destinations</a>
+                  </li>
+                  <li class="menu-item01">
+                    <a href="#" class="menu-link01">activites</a>
+                  </li>
+                  <li class="menu-item01">
+                    <a href="#" class="menu-link01">About australia</a>
+                  </li>
+                  <li class="menu-item01">
+                    <a href="#" class="menu-link01"
+                      >EN
+                      <img
+                        src="/australia/icons/Expand_down-B.svg"
+                        alt="knapp med pil som pekar neråt"
+                        class="expand-down-lang"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- _BUTTON_SEARCH_ -->
+            <button id="searchButton" class="search-btn">
+              <img
+                src="/australia/icons/Search_alt.svg"
+                alt="search icon for search field"
+                class="search-icon"
+              />
+            </button>
+            <!-- _OVERLAY_SEARCH_ -->
+            <div id="searchOverlay" class="search-overlay">
+              <!-- close search -->
+              <button class="close-btn01">
+                <img
+                  src="/australia/icons/Close_round.svg"
+                  alt="close the menu"
+                  class="close-icon"
+                />
+              </button>
+              <h3>What are you looking for?</h3>
+              <form action="#" id="formFild" class="form-field">
+                <div class="form-border">
+                  <img
+                    src="/australia/icons/Search_alt.svg"
+                    alt="search icon for search field"
+                    class="search-icon"
+                  />
+                  <label class="visuallyhidden search-label" for="search"
+                    >searchfield</label
+                  >
+                  <input
+                    type="text"
+                    id="search"
+                    name="searchfield"
+                    placeholder="kangaroo island, orca tour, koala reserve"
+                  />
+                </div>
+              </form>
+            </div>
+          </header>
+          <!-- _HERO-TEXT_ -->
+          <div class="hero-text">
+            <h2>your travel guide to</h2>
+            <div class="wrap-text00">
+              <h1>australia</h1>
+              <!-- BUTTON EXPAND -->
+              <a href="#section-01" class="expand-link">
+                <img
+                  src="/australia/icons/Expand_down.svg"
+                  alt="knapp med pil som pekar neråt"
+                  class="expand-down"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+     
+      <!--Collapsible till footer i mobil-->
+
+      <img
+          src="/australia/icons/logga_mobil.svg"
+          alt="open the menu"
+          class="logo"
+        />
+
+      <div class="collapsible">
+        <button id="rotate" onclick="rotateImage()" class="collapsible-btn">
+          Kontakt
+
+    
+          <img id="rotated"
+          src="/australia/icons/Madde_arrowDown.svg"
+          alt="arrow to footer"
+          class="arrow"
+        />
+
+         <!-- <button id="rotate" onclick="rotateImage()">Rotate image</button> -->
+
+
+        </button>
+        <div class="collapsible-content">
+          <a href="#"
+            >MaddeSign AB</a
+          >
+          <a href="#"
+            >073-88 646 88
+            </a
+          >
+
+          <a href="#"
+            >madde@madde-sign.se</a
+          >
+          <a href="#"
+            >Älvbrinken 4B</a
+          >
+          <a href="#"
+            >652 25 Karlstad</a
+          >
+        </div>
+      </div>
+      <div class="collapsible">
+
+
+        
+        <button id="rotateSecondBtn" onclick="rotateImageTwo()"  class="collapsible-btn">
+         Snabblänkar
+          <img id="rotatedTwo"
+            src="/australia/icons/Madde_arrowDown.svg"
+            alt="link to footer"
+            class="arrow"
+          />
+        </button>
+
+
+
+
+
+
+
+
+        <div class="collapsible-content">
+          <a href="#">Om MaddeSign</a>
+          <a href="#">Boka en kurs
+          </a>
+          <a href="#">Boka privat event</a>
+          <a href="#">Kontakta mig</a>s
+          <a href="#">Integritetspolicy & Cookies</a>
+        </div>
+      </div>
+
+   <div class="icons-box">
+      <a href="https://www.facebook.com/maddesignkeramik">
+        <img
+        src="/australia/icons/facebook.svg"
+        alt="open the menu"
+        class="facebook-icon"
+      />
+      </a>
+      <div class="instagram-icon">
+        <a href="https://www.instagram.com/australia_keramik/"><img
+          src="/australia/icons/instagram.svg"
+          alt="open the menu"
+         
+        /></a>
+
+      </div>
+
+       
+      </div>
+  
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

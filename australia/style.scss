@@ -1,0 +1,140 @@
+
+*,html{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+   
+}
+.visuallyhidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+
+
+
+
+.footer {
+  //min-height: 375px;
+  background-color: #242424;
+
+  padding:10px;
+
+
+  @media(min-width:768px){
+    padding:0rem 10px 4rem 10px;
+  }
+
+   
+
+    .logo{
+        padding-top: 2rem;
+    }
+
+
+    .arrow{
+      @media(min-width:768px){
+        display: none;
+      }
+    }
+
+  //Collapsible
+  .collapsible {
+    background-color: #242424;
+    //padding: 10px;
+    padding-top: 2.5rem;
+
+    .collapsible-btn {
+      display: flex;
+      justify-content: space-between;
+      background-color: #242424;
+      color: #F7F2EF;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      transition: background-color 0.3s ease-in-out;
+     // font-weight: $weightBold;
+      //font-family: $fontSecondary;
+      padding: 1rem 1rem 0.5rem 1rem;
+      border-bottom: solid 1px rgba(84, 84, 84, 0.352);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+
+
+      @media(min-width:768px){
+       
+       //display: none;
+        transition:none;
+        border-bottom: none;
+        cursor: default;
+      }
+
+
+    
+
+    }
+
+    .collapsible-btn:hover {
+      background-color: #242424;
+    }
+
+    .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+
+      @media(min-width:768px){
+       
+        overflow:visible;
+        max-height: 300px;
+        transition:none;
+      }
+    
+ 
+      a {
+        color: #F7F2EF;
+        display: flex;
+        align-items: center;
+        //font-family: $fontSecondary;
+        padding: 0.3rem 1rem;
+        text-decoration: none;
+       
+
+        .footer-icons {
+          margin-right: 0.5rem;
+        }
+      }
+      &.active{
+        max-height:160px;
+      }
+    }
+    // @media (min-width: $desktop-view) {
+    //   display: none;
+    // }
+    }
+
+    .icons-box{
+        padding-top: 2.5rem;
+
+        .instagram-icon{
+            display: inline-block;
+            margin-left: 0.9rem;
+        }
+
+
+    }
+  }
+
+
