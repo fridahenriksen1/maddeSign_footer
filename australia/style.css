@@ -24,19 +24,29 @@
     padding: 0rem 10px 4rem 10px;
   }
 }
-.footer .logo {
+@media (min-width: 768px) {
+  .footer .boxAroundAll {
+    display: flex;
+  }
+}
+.footer .boxAroundAll .logo {
   padding-top: 2rem;
 }
 @media (min-width: 768px) {
-  .footer .arrow {
+  .footer .boxAroundAll .boxAllLinks {
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  .footer .boxAroundAll .boxAllLinks .arrow {
     display: none;
   }
 }
-.footer .collapsible {
+.footer .boxAroundAll .boxAllLinks .collapsible {
   background-color: #242424;
   padding-top: 2.5rem;
 }
-.footer .collapsible .collapsible-btn {
+.footer .boxAroundAll .boxAllLinks .collapsible .collapsible-btn {
   display: flex;
   justify-content: space-between;
   background-color: #242424;
@@ -54,44 +64,44 @@
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .footer .collapsible .collapsible-btn {
+  .footer .boxAroundAll .boxAllLinks .collapsible .collapsible-btn {
     transition: none;
     border-bottom: none;
     cursor: default;
   }
 }
-.footer .collapsible .collapsible-btn:hover {
+.footer .boxAroundAll .boxAllLinks .collapsible .collapsible-btn:hover {
   background-color: #242424;
 }
-.footer .collapsible .collapsible-content {
+.footer .boxAroundAll .boxAllLinks .collapsible .collapsible-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
-  .footer .collapsible .collapsible-content {
+  .footer .boxAroundAll .boxAllLinks .collapsible .collapsible-content {
     overflow: visible;
     max-height: 300px;
     transition: none;
   }
 }
-.footer .collapsible .collapsible-content a {
+.footer .boxAroundAll .boxAllLinks .collapsible .collapsible-content a {
   color: #F7F2EF;
   display: flex;
   align-items: center;
   padding: 0.3rem 1rem;
   text-decoration: none;
 }
-.footer .collapsible .collapsible-content a .footer-icons {
+.footer .boxAroundAll .boxAllLinks .collapsible .collapsible-content a .footer-icons {
   margin-right: 0.5rem;
 }
-.footer .collapsible .collapsible-content.active {
+.footer .boxAroundAll .boxAllLinks .collapsible .collapsible-content.active {
   max-height: 160px;
 }
-.footer .icons-box {
+.footer .boxAroundAll .boxAllLinks .icons-box {
   padding-top: 2.5rem;
 }
-.footer .icons-box .instagram-icon {
+.footer .boxAroundAll .boxAllLinks .icons-box .instagram-icon {
   display: inline-block;
   margin-left: 0.9rem;
 }/*# sourceMappingURL=style.css.map */
